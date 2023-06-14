@@ -1,0 +1,13 @@
+.nav-links {
+    /* display: flex; */
+    /* list-style: none; */
+    padding-left: 0;
+}
+
+.nav-link-text {
+    color: var(--text-color);
+}
+
+.nav-links a:hover {
+    color: var(--color-base-60);
+}
