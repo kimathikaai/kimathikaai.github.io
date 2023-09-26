@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); */
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Montserrat";
+    /* font-family: "Montserrat"; */
 }
 
 html, body {
@@ -12,6 +12,7 @@ html, body {
 }
 
 body {
+    /* Colors */
     --color-base-00: #1e1e1e;
     --color-base-05: #212121;
     --color-base-10: #242424;
@@ -24,7 +25,69 @@ body {
     --color-base-60: #999999;
     --color-base-70: #bababa;
     --color-base-100: #dadada;
+    --color-red-rgb: 251, 70, 76;
+    --color-red: #fb464c;
+    --color-orange-rgb: 233, 151, 63;
+    --color-orange: #e9973f;
+    --color-yellow-rgb: 224, 222, 113;
+    --color-yellow: #e0de71;
+    --color-green-rgb: 68, 207, 110;
+    --color-green: #44cf6e;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-cyan: #53dfdd;
+    --color-blue-rgb: 2, 122, 255;
+    --color-blue: #027aff;
+    --color-purple-rgb: 168, 130, 255;
+    --color-purple: #a882ff;
+    --color-pink-rgb: 250, 153, 205;
+    --color-pink: #fa99cd;
+
+    /* Text */
     --text-normal: var(--color-base-100);
-    background: var(--color-base-20);
+    --text-muted: var(--color-base-60);
+    --normal-weight: 400em;
+    --text-accent: #889eaa;
+    --link-color: var(--text-accent);
+
+    /* Background */
+    --background-color: var(--color-base-20);
+
+    /* Layout */
+    --sidebar-width: 280px;
+    --sidebar-border-color: var(--color-base-30);
+    --sidebar-padding-left: 20px;
+    --sidebar-padding-right: 20px;
+    --content-margin-right: calc(var(--sidebar-padding-left) + var(--sidebar-padding-left) + var(--sidebar-width));
+    --outer-container-padding: 20px;
+    --sidebar-item-border-color: var(--text-normal);
+    --sidebar-item-padding: 20px;
+}
+
+body {
+    /* Text */
     color: var(--text-normal);
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: var(--normal-weight);
+    line-height: 1.6;
+
+    /* Background */
+    background: var(--background-color);
+}
+
+h1 {
+    border-bottom: 1px solid var(--sidebar-border-color);
+    padding: 0px 0px 16px 0px;
+    /* margin: 48px 0px 16px 0px; */
+    margin: 0px 0px 16px 0px;
+    font-weight: 600;
+}
+
+p a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+p {
+    margin: 12px 0px;
 }

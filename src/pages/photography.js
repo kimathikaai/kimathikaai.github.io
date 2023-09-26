@@ -4,10 +4,10 @@ import Layout from "../components/Layout";
 const PhotographyPage = () => {
     return (
     <Layout>
-        <div>
-            <h1>Photography Page</h1>
+        <>
+            <h1>PHOTOGRAPHY</h1>
             <p>Post photography projects</p>
-        </div>
+        </>
     </Layout>
     )
 }

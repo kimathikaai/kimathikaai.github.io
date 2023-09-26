@@ -1,13 +1,25 @@
 import * as React from "react"
 import Layout from "../components/Layout"
+import {
+content
+} from '../styles/layout.module.css'
 
 const IndexPage = () => {
     return (
         <Layout>
-            <div>
-                <h1>Kimathi Kaai</h1>
-                <p>MASc student at UWaterloo</p>
-            </div>
+            <>
+                <h1>KIMATHI KAAI</h1>
+                <p>
+                    I'm currently conducting research as a MASc Systems Design 
+                    Engineering student at the University of Waterloo. I primarily 
+                    focus on improving the "seeing" ability of machine-learning 
+                    systems when they encounter completely new data environments. 
+                    I conduct my research as part of the <a href="https://uwaterloo.ca/vision-image-processing-lab/" target="_blank" rel="noopener">VIP</a> and <a href="https://sirisharambhatla.com/criticalml/" target="_blank" rel="noopener">Critical ML</a> labs at the university. 
+                </p>
+                <p>
+                    As I build this site I'll be posting publications, photography and more.
+                </p>
+            </>
         </Layout>
     )
 }

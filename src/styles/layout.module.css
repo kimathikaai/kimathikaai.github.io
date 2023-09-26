@@ -1,13 +1,118 @@
-.nav-links {
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+.outer-container {
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    /* border: 1px solid #0000ff; */
+    padding: var(--outer-container-padding);
+}
+
+.inner-container {
     /* display: flex; */
-    /* list-style: none; */
-    padding-left: 0;
+    /* border: 1px solid #ffff00; */
+    height: 100%;
+
+    /* This will set the max-width of the element to 1200px 
+    * (converted into rem units), and also center it on 
+    * widths larger than 1200px.*/
+    margin: auto;
+    max-width: 75rem;
 }
 
-.nav-link-text {
-    color: var(--text-color);
+.content {
+    /* margin-left: var(--sidebar-width); */
+    /* margin: 0 var(--content-margin-right); */
+    /* left: 25%; */
+    /* margin: 0 auto; */
+    /* position: relative; */
+    /* padding: 0px var(--sidebar-padding-right); */
+    /* display: flex; */
+    flex: 1;
+    padding: 0px 48px;
 }
 
-.nav-links a:hover {
-    color: var(--color-base-60);
+/* */
+/* Navigation Bar */
+/* */
+.side-nav {
+    /* height: 100%; */
+    /* width: var(--sidebar-width); */
+    /* min-width: var(--sidebar-width); */
+    /* padding: 30px 0 0 20px; */
+
+    position: relative;
+    /* display: flex; */
+    flex: 0 1 200px; /* flex-grow: 0, flex-shrink: 0, flex-basis: 300px */
+
+    /* z-index: 1; */
+    /* top: 0; */
+    /* left: 0; */
+    background-color: var(--background-color);
+    /* border: 1px solid #ff0000; */
+    /* overflow-x: hidden; */
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+}
+
+.side-nav header {
+    padding: 0px 0px 40px;
+}
+
+/* .side-nav a{ */
+/*     color: var(--text-normal); */
+/* } */
+
+.side-nav div{
+    padding: 0px var(--sidebar-item-padding);
+    border-left: 1px solid var(--sidebar-border-color);
+    color: var(--text-muted);
+}
+
+.side-nav div:hover{
+    border-left: 1px solid var(--sidebar-item-border-color);
+    color: var(--text-normal);
+}
+
+.side-nav nav{
+    position: fixed;
+    margin: 70px 0;
+}
+
+
+/* */
+/* Website Layout */
+/* */
+
+footer {
+    text-align: right;
+    font-size: 12px;
+    color: var(--color-base-40);
+    position: fixed;
+    height: var(--outer-container-padding);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 0px var(--outer-container-padding);
+    /* margin: 12px auto; */
+    /* margin: 40px auto; */
+}
+
+
+/* Using a media query, we will turn on flexbox 
+* when the device width is 640px and above. Meaning
+* that on smaller widths on phones, it will remain 
+* stacked. Once it hits that 640 mark it will switch 
+* to the flexbox layout.*/
+@media screen and (min-width: 640px){
+    .inner-container {
+        display: flex;
+    }    
+
+    .side-nav {
+        border-right: 1px solid var(--sidebar-border-color);
+    }
 }
