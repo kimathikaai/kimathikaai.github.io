@@ -23,6 +23,7 @@ const  Navbar = () => {
                 <Link to="/research" getProps={isActive}><div>research</div></Link>
                 <Link to="/photography" getProps={isActive}><div>photography</div></Link>
                 <Link to="/experience" getProps={isActive}><div>experience</div></Link>
+                <Link to="/test" getProps={isActive}><div>test</div></Link>
             </nav>
         </div>
     )

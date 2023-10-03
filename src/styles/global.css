@@ -25,21 +25,15 @@ body {
     --color-base-60: #999999;
     --color-base-70: #bababa;
     --color-base-100: #dadada;
-    --color-red-rgb: 251, 70, 76;
+
     --color-red: #fb464c;
-    --color-orange-rgb: 233, 151, 63;
     --color-orange: #e9973f;
-    --color-yellow-rgb: 224, 222, 113;
-    --color-yellow: #e0de71;
-    --color-green-rgb: 68, 207, 110;
+    --color-yellow: #e5b567;
+    /* --color-yellow: #e0de71; */
     --color-green: #44cf6e;
-    --color-cyan-rgb: 83, 223, 221;
     --color-cyan: #53dfdd;
-    --color-blue-rgb: 2, 122, 255;
     --color-blue: #027aff;
-    --color-purple-rgb: 168, 130, 255;
     --color-purple: #a882ff;
-    --color-pink-rgb: 250, 153, 205;
     --color-pink: #fa99cd;
 
     /* Text */
@@ -53,22 +47,29 @@ body {
     --background-color: var(--color-base-20);
 
     /* Layout */
-    --sidebar-width: 200px;
     --sidebar-border-color: var(--color-base-30);
     --sidebar-padding-left: 20px;
     --sidebar-padding-right: 20px;
-    --content-margin-left: calc(var(--sidebar-width));
-    --content-margin-top: 20px;
+    --sidebar-width: 200px;
+
     --outer-container-padding: 20px;
+
     --sidebar-item-border-color: var(--text-normal);
-    --sidebar-item-padding: 20px;
+    --sidebar-item-padding-left: 20px;
+    --sidebar-item-padding-top: 10px;
+
+    --content-margin-left: calc(var(--sidebar-width));
+    --content-margin-top: 50px;
+
+    --inner-container-width: 65rem;
 }
 
 body {
     /* Text */
     color: var(--text-normal);
     font-family: sans-serif;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
+    letter-spacing: -0.015em;
     font-weight: var(--normal-weight);
     line-height: 1.6;
 
@@ -77,14 +78,27 @@ body {
 }
 
 h1 {
-    border-bottom: 1px solid var(--sidebar-border-color);
+    border-bottom: 2px solid var(--sidebar-border-color);
     padding: 0px 0px 16px 0px;
     /* margin: 48px 0px 16px 0px; */
-    margin: 0px 0px 16px 0px;
+    margin: 0px 0px 8px 0px;
     font-weight: 600;
 }
 
-p a {
+h2 {
+    border-bottom: 1px solid var(--sidebar-border-color);
+    padding: 0px 0px 8px 0px;
+    /* margin: 48px 0px 16px 0px; */
+    margin: 24px 0px 8px 0px;
+    font-weight: 500;
+    color: var(--color-yellow);
+}
+
+h3 {
+    line-height: 1.1;
+}
+
+a {
     color: var(--link-color);
     text-decoration: underline;
 }

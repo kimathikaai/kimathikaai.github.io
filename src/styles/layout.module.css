@@ -1,25 +1,15 @@
-
-.wrapper {
-    margin: auto;
-    max-width: 75rem;
-}
-
 .outer-container {
     /* max-width: 1000px; */
     /* margin: auto; */
     /* border: 1px solid #0000ff; */
-    padding: var(--outer-container-padding);
+    /* padding: var(--outer-container-padding); */
+    padding:0;
     height: 90%;
     /* border: 1px solid red; */
 }
 
-.outer-container * {
-    /* border: 1px solid red; */
-    /* height: 100%; */
-}
-
 .inner-container {
-    /* display: flex; */
+    display: flex;
     /* border: 1px solid #ffff00; */
     height: 100%;
     /* border: 1px solid blue; */
@@ -27,22 +17,40 @@
     /* This will set the max-width of the element to 1200px 
     * (converted into rem units), and also center it on 
     * widths larger than 1200px.*/
-    margin: auto;
-    max-width: 65rem;
+    margin: 0 auto;
+    max-width: var(--inner-container-width);
 }
 
 .content {
-    margin: var(--content-margin-top) 0 0 var(--content-margin-left);
+    margin: var(--content-margin-top) 0 var(--content-margin-top) var(--content-margin-left);
     /* margin: 0 var(--content-margin-right); */
     position: relative;
+    /* width: 100%; */
     /* left: 25%; */
     /* margin: 0 auto; */
     /* position: relative; */
     /* padding: 0px var(--sidebar-padding-right); */
-    /* display: flex; */
+    /* flex: 1 1 calc(var(--inner-container-width)*0.5); */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Add a scrollbar when content exceeds container height*/
     /* flex: 1; */
     padding: 0px 48px;
     height:100%;
+}
+
+.content::-webkit-scrollbar{
+    width: 10px;
+
+}
+.content::-webkit-scrollbar-track{
+    /* background-color: var(--background-color); */
+    background-color: var(--color-base-40);
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--color-base-60);
 }
 
 /* */
@@ -52,7 +60,7 @@
     height: 100%;
     /* width: var(--sidebar-width); */
     min-width: var(--sidebar-width);
-    /* padding: 30px 0 0 20px; */
+    /* padding: 0 var(--sidebar-padding-left); */
 
     position: fixed;
     /* display: flex; */
@@ -62,11 +70,15 @@
     /* top: 0; */
     /* left: 0; */
     background-color: var(--background-color);
-    border-right: 1px solid var(--sidebar-border-color);
+    border-right: 2px solid var(--sidebar-border-color);
     /* border: 1px solid #ff0000; */
     /* overflow-x: hidden; */
     /* padding-top: 20px; */
     /* padding-left: 20px; */
+}
+
+.side-nav a {
+    text-decoration: none;
 }
 
 .side-nav header {
@@ -74,15 +86,17 @@
 }
 
 .side-nav div{
-    padding: 0px var(--sidebar-item-padding);
-    margin-top: calc(var(--sidebar-item-padding) * 0.5);
-    border-left: 1px solid var(--sidebar-border-color);
+    padding: var(--sidebar-item-padding-top) var(--sidebar-item-padding-left);
+    /* margin-top: calc(var(--sidebar-item-padding) * 0.5); */
+    border-left: 2px solid var(--sidebar-border-color);
     color: var(--text-muted);
 }
 
 .side-nav div:hover{
-    border-left: 1px solid var(--text-accent);
+    border-color: var(--text-accent);
+    /* border-left: 2px solid var(--text-accent); */
     color: var(--text-accent);
+    padding-left: calc(var(--sidebar-item-padding-left)*0.75);
 }
 
 .side-nav nav{
@@ -91,8 +105,14 @@
 }
 
 .side-nav .active div{
-    border-left: 1px solid var(--sidebar-item-border-color);
+    border-color: var(--text-normal);
+    /* border-left: 1px solid var(--sidebar-item-border-color); */
     color: var(--text-normal);
+}
+
+.side-nav .active div:hover{
+    /* border-color: var(--text-normal); */
+    padding-left: calc(var(--sidebar-item-padding-left)*1.0);
 }
 
 /* */
@@ -109,7 +129,7 @@ footer {
     right: 0;
     width: 100%;
     padding: 0px var(--outer-container-padding);
-    background-color: var(--background-color)
+    /* background-color: var(--background-color) */
     /* margin: 12px auto; */
     /* margin: 40px auto; */
 }

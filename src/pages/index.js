@@ -10,7 +10,7 @@ const IndexPage = () => {
             <>
                 <h1>KIMATHI KAAI</h1>
                 <p>
-                    I'm currently conducting research as a MASc Systems Design 
+                    I conducting research as a MASc Systems Design 
                     Engineering student at the University of Waterloo. I primarily 
                     focus on improving the "seeing" ability of machine-learning 
                     systems when they encounter completely new data environments. 
