@@ -1,5 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
+import {
+    content,
+    date
+} from '../styles/experience.module.css'
 
 const WorkData = [
     {
@@ -72,11 +76,13 @@ const ExperiencePage = () => {
             <h1>WORK EXPERIENCE</h1>
                 {
                     WorkData.map((item, index) => (
-                    <div>
-                            <h3>{item.job_title}</h3>
-                            <p>{item.company}, {item.country}</p>
+                    <div className={content}>
+                        <div className={date}>
                             <p>{item.start_year}/{item.start_month} - {item.end_year}/{item.end_month}</p>
-                            <p>{item.description}</p>
+                        </div>
+                        <h3>{item.job_title}</h3>
+                        <p>{item.company}, {item.country}</p>
+                        <p>{item.description}</p>
                     </div>
                     ))
                 }

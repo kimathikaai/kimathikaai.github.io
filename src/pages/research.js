@@ -45,11 +45,19 @@ const ResearchPage = () => {
                     </div>
                     <div className={content}>
                         <h3>Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</h3>
-                        <p>Jinman P., <span className={myName}><b>Kimathi K.,</b></span> Saad H., Norikatsu S., Sirisha R., Paul F.</p>
-                        <p>
-                        Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">
-                            (KDD) 2023 
-                        </a>
+                        <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                        <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">2023</a>
+                        </p>
+                    </div>
+                </div>
+                <div className={researchCard}>
+                    <div className={media}>
+                        <img src={pacs} />
+                    </div>
+                    <div className={content}>
+                    <h3>Domain Generalization for Domain-Linked Classes</h3>
+                        <p><span className={myName}>Kaai K,</span> S Hossain, S Rambhatla</p>
+                        <p>Arxiv Preprint <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">2023</a>
                         </p>
                     </div>
                 </div>

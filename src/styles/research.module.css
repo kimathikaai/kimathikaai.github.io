@@ -22,6 +22,7 @@
 
 .my-name {
     color: var(--color-yellow);
+    font-weight: bold;
 }
 
 /* Paper Media Container */
