@@ -60,7 +60,7 @@
     height: 100%;
     /* width: var(--sidebar-width); */
     min-width: var(--sidebar-width);
-    /* padding: 0 var(--sidebar-padding-left); */
+    padding: 0 var(--sidebar-padding-left);
 
     position: fixed;
     /* display: flex; */
@@ -140,13 +140,18 @@ footer {
 * that on smaller widths on phones, it will remain 
 * stacked. Once it hits that 640 mark it will switch 
 * to the flexbox layout.*/
-@media screen and (min-width: 640px){
+@media screen and (max-width: 640px){
     .inner-container {
         /* display: flex; */
+        border: 2px solid red;
     }    
+    .content {
+        margin-left: 0px;
+    }
 
     .side-nav {
         /* border-right: 1px solid var(--sidebar-border-color); */
+        visibility: hidden;
     }
     .side-nav {
         /* position: fixed; */

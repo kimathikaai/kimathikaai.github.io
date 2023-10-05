@@ -30,13 +30,15 @@
     /* border: 1px solid yellow; */
     /* padding: 10px; */
     max-width:25%;
-    display: flex;
+    /* display: flex; */
     /* min-height:100%; */
 }
 
 /* Paper Image */
 .media img {
     max-width:100%;
+    max-heigth:100%;
+    vertical-align: middle;
 }
 
 /* Spacing in content*/
