@@ -7,6 +7,16 @@ import {
 
 const WorkData = [
     {
+        job_title: "Teaching Assistant",
+        company: "University of Waterloo",
+        country: "Canada",
+        start_year: 2023,
+        end_year: 2023,
+        start_month: 5,
+        end_month: 8,
+        description: "MSCI 436 Decision Support Systems"
+    },
+    {
         job_title: "Undergraduate Research Assistant",
         company: "University of Waterloo",
         country: "Canada",

@@ -1,8 +1,5 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import {
-content
-} from '../styles/layout.module.css'
 
 const IndexPage = () => {
     return (

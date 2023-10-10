@@ -9,7 +9,7 @@ import store_window from '../../static/store_window.jpg'
 import perimeter_window from '../../static/perimeter_window.jpg'
 import garage_vines from '../../static/garage_vines.jpg'
 
-const Images = [back_door, store_window, perimeter_window, garage_vines]
+const Images = [garage_vines, back_door, store_window, perimeter_window]
 
 const PhotographyPage = () => {
     return (

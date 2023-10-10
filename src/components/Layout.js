@@ -1,13 +1,19 @@
 import { Link } from "gatsby"; // preloading
-import React from "react";
+import React, {useState} from "react";
 import '../styles/global.css'
+import * as moduleStyles from "../styles/layout.module.css"
 import {
     innerContainer,
     outerContainer,
     sideNav,
     content,
+    header,
     active,
+    extended,
+    navIcon,
 } from '../styles/layout.module.css'
+
+import * as IoIcons from 'react-icons/io5'
 
 const isActive = ({isCurrent}) => {
     // return isCurrent ? {className: 'active'} : null
@@ -29,12 +35,34 @@ const  Navbar = () => {
     )
 }
 
+const Header = ({isOpen, toggleOpen}) => {
+    return (
+        <button 
+            className={`${moduleStyles.header} ${isOpen ? moduleStyles.headerBorder : ''}`}
+            onClick={toggleOpen}
+        >
+            <IoIcons.IoMenuOutline  className={navIcon}/>
+        </button>
+    )
+}
+
 export default function Layout({ children }) {
+    const [isSidebarExtended, setSidebarExtended] = useState(true);
+
+    const toggleSidebar = () => {
+        if (isSidebarExtended == true) {
+            setSidebarExtended(false);
+        } else{
+            setSidebarExtended(true); 
+        }
+    }
+
     return (
         <div className={outerContainer}>
+            <Header isOpen={isSidebarExtended} toggleOpen={toggleSidebar}/>
             <div className={innerContainer}>
-                <Navbar />
-                <div className={content}>
+                <Navbar isExtended={isSidebarExtended}/>
+                <div className={[content]}>
                     { children }
                 </div>
             </div>

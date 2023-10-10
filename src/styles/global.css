@@ -58,7 +58,8 @@ body {
     --sidebar-item-padding-left: 20px;
     --sidebar-item-padding-top: 10px;
 
-    --content-margin-left: calc(var(--sidebar-width) + var(--sidebar-padding-left));
+    /* --content-margin-left: calc(var(--sidebar-width) + var(--sidebar-padding-left)); */
+    --content-margin-left: 0;
     --content-margin-top: 50px;
 
     --inner-container-width: 65rem;

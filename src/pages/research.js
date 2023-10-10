@@ -8,6 +8,7 @@ import {
 } from '../styles/research.module.css'
 import pacs from '../../static/pacs_data.png'
 import egostan from '../../static/egostan_skeleton.png'
+import egostan_fmt from '../../static/egostan_fmt.png'
 
 const PublicationData = [
     {    
@@ -46,7 +47,7 @@ const ResearchPage = () => {
                     <div className={content}>
                         <h3>Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</h3>
                         <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                        <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">2023</a>
+                        <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">2023</a>
                         </p>
                     </div>
                 </div>
@@ -57,8 +58,18 @@ const ResearchPage = () => {
                     <div className={content}>
                     <h3>Domain Generalization for Domain-Linked Classes</h3>
                         <p><span className={myName}>Kaai K,</span> S Hossain, S Rambhatla</p>
-                        <p>Arxiv Preprint <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">2023</a>
+                        <p>Arxiv Preprint Under Review, <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">2023</a>
                         </p>
+                    </div>
+                </div>
+                <div className={researchCard}>
+                    <div className={media}>
+                        <img src={egostan_fmt} />
+                    </div>
+                    <div className={content}>
+                    <h3>Building Spatio-temporal Transformers for Egocentric 3D Pose Estimation</h3>
+                        <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                        <p>Joint International Workshop on Egocentric Perception, Interaction and Computing (EPIC) and Ego4D, IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), Jun 6, 2022</p>
                     </div>
                 </div>
             </div>
