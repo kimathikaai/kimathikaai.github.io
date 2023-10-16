@@ -19,7 +19,7 @@
     /* This will set the max-width of the element to 1200px 
     * (converted into rem units), and also center it on 
     * widths larger than 1200px.*/
-    /* margin: 0 auto; */
+    margin: 0 auto;
     max-width: var(--inner-container-width);
 }
 
@@ -41,19 +41,13 @@
 
     cursor: pointer;
 }
-
 .header:hover {
     background-color: var(--color-base-30);
 }
-
 .nav-icon {
     height: 2em;
     width: 2em;
     stroke: var(--color-base-100);
-}
-
-.header-border {
-    border: 3px solid red;
 }
 
 /* */
@@ -197,19 +191,29 @@ footer {
     .inner-container {
         /* display: flex; */
         /* border: 2px solid red; */
+        height: calc(100vh - 50px);
     }    
     .content {
-        margin-left: 0px;
-        margin-top: calc(var(--content-margin-top) * 0.75);
+        /* margin-left: 0px; */
+        /* margin-top: calc(var(--content-margin-top) * 0.75); */
+        /* display: none; */
     }
 
-    .side-nav {
+    .side-nav.closed {
         /* border-right: 1px solid var(--sidebar-border-color); */
         /* visibility: hidden; */
         display: none;
     }
 
+    .side-nav {
+        border: 0;
+    }
+
     .header {
         display: flex;
+    }
+
+    .content.closed {
+        display: none;
     }
 }

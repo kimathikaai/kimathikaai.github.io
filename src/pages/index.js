@@ -17,6 +17,9 @@ const IndexPage = () => {
                     As I build this site I'll be posting publications, photography and more.
                 </p>
             </>
+        <footer>
+            &copy; Copyright 2023 Kimathi Kaai
+        </footer>
         </Layout>
     )
 }
