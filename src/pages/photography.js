@@ -25,6 +25,6 @@ const PhotographyPage = () => {
 }
 
 // Page metadata for gatsby for SEO
-export const Head = () => <title>Photography Page</title>
+export const Head = () => <title>Kimathi | Photography</title>
 
 export default PhotographyPage

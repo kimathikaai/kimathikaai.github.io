@@ -39,37 +39,40 @@ const ResearchPage = () => {
     <Layout>
         <>
             <h1>RESEARCH</h1>
-            <div>
-                <div className={researchCard}>
-                    <div className={media}>
-                        <img src={egostan} />
-                    </div>
-                    <div className={content}>
-                        <h3>Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</h3>
-                        <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                        <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), <a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">2023</a>
-                        </p>
-                    </div>
+            <h2>PUBLICATIONS</h2>
+            <div className={researchCard}>
+                <div className={media}>
+                    <img src={egostan} />
                 </div>
+                <div className={content}>
+                    <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
+                    <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023
+                    </p>
+                </div>
+            </div>
+            <h2>WORKSHOPS</h2>
+            <div className={researchCard}>
+                <div className={media}>
+                    <img src={egostan_fmt} />
+                </div>
+                <div className={content}>
+                <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2206.04785">Building Spatio-temporal Transformers for Egocentric 3D Pose Estimation</a></h3>
+                    <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                    <p>Joint International Workshop on Egocentric Perception, Interaction and Computing (EPIC) and Ego4D, IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2022</p>
+                </div>
+            </div>
+            <h2>UNDER REVIEW</h2>
+            <div>
                 <div className={researchCard}>
                     <div className={media}>
                         <img src={pacs} />
                     </div>
                     <div className={content}>
-                    <h3>Domain Generalization for Domain-Linked Classes</h3>
+                    <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">Domain Generalization for Domain-Linked Classes</a></h3>
                         <p><span className={myName}>Kaai K,</span> S Hossain, S Rambhatla</p>
-                        <p>Arxiv Preprint Under Review, <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">2023</a>
+                        <p>Arxiv Preprint Under Review, 2023
                         </p>
-                    </div>
-                </div>
-                <div className={researchCard}>
-                    <div className={media}>
-                        <img src={egostan_fmt} />
-                    </div>
-                    <div className={content}>
-                    <h3>Building Spatio-temporal Transformers for Egocentric 3D Pose Estimation</h3>
-                        <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                        <p>Joint International Workshop on Egocentric Perception, Interaction and Computing (EPIC) and Ego4D, IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), Jun 6, 2022</p>
                     </div>
                 </div>
             </div>
@@ -78,6 +81,6 @@ const ResearchPage = () => {
     )
 }
 
-export const Head = () => <title>Research</title>
+export const Head = () => <title>Kimathi | Research</title>
 
 export default ResearchPage

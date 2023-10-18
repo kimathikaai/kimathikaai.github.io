@@ -1,9 +1,10 @@
 /* Paper Content Container */
 .content {
     /* border: 1px solid red; */
-    margin: 20px 0 20px;
-    padding: 0 20px;
-    border-left: 2px solid var(--color-yellow);
+    margin: 20px 0;
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-left: 2px solid var(--primary-color);
     /* display: flex; */
     /* flex-direction: column; */
     /* color: var(--color-base-70);  */
@@ -15,6 +16,7 @@
 
 /* Date container */
 .date p{
-    color: var(--color-yellow);
+    /* color: var(--color-base-70); */
+    color: var(--primary-color);
     margin-bottom: 10px;
 }

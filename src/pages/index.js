@@ -24,6 +24,6 @@ const IndexPage = () => {
     )
 }
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Kimathi | About</title>
 
 export default IndexPage

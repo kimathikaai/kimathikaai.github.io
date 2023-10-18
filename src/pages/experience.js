@@ -14,7 +14,7 @@ const WorkData = [
         end_year: 2023,
         start_month: 5,
         end_month: 8,
-        description: "MSCI 436 Decision Support Systems"
+        description: "MSCI 436 Decision Support Systems. This course provides an introduction to the design and implementation of AI-based decision support systems for engineering and business applications. My responsibilities included tutoring, consultations with students, marking and creating examinations and assignments."
     },
     {
         job_title: "Undergraduate Research Assistant",
@@ -24,7 +24,7 @@ const WorkData = [
         end_year: 2022,
         start_month: 1,
         end_month: 4,
-        description: "Worked under University of Waterloo's Vision and Image Processing Lab where I focused on publishing research on egocentric 3D human pose estimation. This culminated in co-authoring a paper accepted as a CVPR 2022 workshop conference paper (arXiv:2206.04785). My efforts consisted of: reviewing and presenting background research on papers; collaborating with team members to generate novel ideas in weekly brainstorming sessions; implementing validation and evaluation modules for the PyTorch-based model prototypes."
+        description: "Worked under UWaterloo's Vision and Image Processing (VIP) Lab focusing on egocentric 3D human pose estimation research. This culminated in co-authoring 1) a CVPR 2022 workshop conference paper and 2) a KDD 2023 conference publication. My efforts consisted of: reviewing and presenting background research on papers; collaborating with team members to generate novel ideas in weekly brainstorming sessions; implementing validation and evaluation modules for the PyTorch-based model prototypes."
     },
     {
         job_title: "Deep Learning Developer",
@@ -83,7 +83,8 @@ const ExperiencePage = () => {
     return (
     <Layout>
         <>
-            <h1>WORK EXPERIENCE</h1>
+            <h1>EXPERIENCE</h1>
+            <h2>PROFESSIONAL</h2>
                 {
                     WorkData.map((item, index) => (
                     <div className={content}>
@@ -101,6 +102,6 @@ const ExperiencePage = () => {
     )
 }
 
-export const Head = () => <title>Experience</title>
+export const Head = () => <title>Kimathi | Experience</title>
 
 export default ExperiencePage
