@@ -5,13 +5,16 @@
     justify-content: center;
 }
 
-.profile-name {
+.profile-name h1{
+    border-bottom: 2px solid var(--text-normal);
 
 }
-
 .profile-header {
     display: none;
     text-align: center;
+}
+.profile-header h1 {
+    border-bottom: 2px solid var(--text-normal);
 }
 
 /* Paper Media Container */
@@ -42,6 +45,8 @@
 }
 .details {
     padding-left: 20px;
+    margin-left: 20px;
+    /* border-left: 2px solid var(--text-normal); */
     /* background-color: blue; */
     /* flex: 1 1 300px; */
     /* flex-grow: 1; */
@@ -100,6 +105,10 @@
     }
     .profile-header {
         display: block;
+    }
+    .details {
+        border: none;
+        margin-left: 0;
     }
 }
 
