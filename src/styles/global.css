@@ -37,6 +37,8 @@ body {
     --color-purple: #a882ff;
     --color-purple-muted: #9e86c8;
     --color-pink: #fa99cd;
+    --color-brown-muted: #aa9488;
+    --color-brown-200: #c3b3ab;
 
     --accent-color: var(--color-yellow-muted);
     --accent-color: var(--color-blue);
@@ -49,6 +51,7 @@ body {
     --surface-color: var(--color-base-30);
     --primary-color: var(--color-blue-muted);
     --secondary-color: var(--color-yellow-muted);
+    /* --secondary-color: var(--color-brown-muted); */
 
     /* Text */
     --text-normal: var(--color-base-100);

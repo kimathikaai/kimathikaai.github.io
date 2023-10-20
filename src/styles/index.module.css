@@ -70,6 +70,10 @@
     width: 2em;
 }
 
+.network svg:hover {
+    color: var(--secondary-color);
+}
+
 /* Paper Image */
 .media img {
     /* height: 300px; */
