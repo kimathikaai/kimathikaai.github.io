@@ -6,6 +6,7 @@ import {
     media,
     myName,
 } from '../styles/research.module.css'
+import * as ms from '../styles/research.module.css'
 import pacs from '../../static/pacs_data.png'
 import egostan from '../../static/egostan_skeleton.png'
 import egostan_fmt from '../../static/egostan_fmt.png'
@@ -47,8 +48,8 @@ const ResearchPage = () => {
                 <div className={content}>
                     <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
                     <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023
-                    </p>
+                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023</p>
+                    <p><span className={ms.highlight}>Oral and Poster Presentation</span></p>
                 </div>
             </div>
             <h2>WORKSHOPS</h2>

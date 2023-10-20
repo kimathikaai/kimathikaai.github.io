@@ -59,6 +59,7 @@ body {
 
     /* Layout */
     --sidebar-border-color: var(--color-base-30);
+    --border-color: var(--color-base-30);
     --sidebar-padding-left: 20px;
     --sidebar-padding-right: 20px;
     --sidebar-width: 200px;
@@ -95,6 +96,7 @@ h1 {
     /* margin: 48px 0px 16px 0px; */
     margin: 0px 0px 8px 0px;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 h2 {
@@ -105,6 +107,7 @@ h2 {
     font-weight: 500;
     color: var(--primary-color);
     /* position: sticky; */
+    font-size: 1.4rem;
 }
 
 h3 {

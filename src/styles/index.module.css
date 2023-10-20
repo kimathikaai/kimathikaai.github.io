@@ -1,0 +1,101 @@
+.profile {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-name {
+
+}
+
+.profile-header {
+    display: none;
+    text-align: center;
+}
+
+/* Paper Media Container */
+.media {
+    /* border: 1px solid yellow; */
+    /* padding: 10px; */
+    /* max-width:40%; */
+    /* height: 20rem; */
+    /* width: 20rem; */
+    /* display: flex; */
+    /* min-height:100%; */
+    /* background-color: red; */
+    /* border-right: 2px solid var(--border-color); */
+    /* padding-right: 20px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 20px; */
+    /* width:40%; */
+    /* height: 40vh; */
+    /* flex-grow: 1; */
+    /* min-width: 250px; */
+    height: calc(300px + 2rem + 50px);
+    /* width: 250px; */
+    flex: 0 0 250px;
+}
+.details {
+    padding-left: 20px;
+    /* background-color: blue; */
+    /* flex: 1 1 300px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    flex: 1 0 300px;
+    /* min-width: 100px; */
+}
+
+.network {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* border-left: 1px solid var(--border-color); */
+    /* border-right: 1px solid var(--border-color); */
+    padding-top: 20px;
+    width: 200px;
+}
+
+.network ul {
+    list-style: none;
+}
+.network svg {
+    color: var(--text-normal);
+    height: 2em;
+    width: 2em;
+}
+
+/* Paper Image */
+.media img {
+    /* height: 300px; */
+    height: 100%;
+    max-width: 100%;
+    /* min-width: 100%; */
+    /* width: 250px; */
+    object-fit: cover;
+    object-position: 38% 50%;
+    /* width: 20rem; */
+    /* max-width:100%; */
+    /* max-heigth:100%; */
+    /* vertical-align: bottom; */
+    border: 3px solid var(--text-normal);
+    /* border-radius: 5%; */
+
+    /* flex: 1 1 250px; */
+    /* flex-grow: 1; */
+}
+
+@media screen and (max-width: 900px){
+    .profile-name {
+        display: none;
+    }
+    .profile-header {
+        display: block;
+    }
+}
+

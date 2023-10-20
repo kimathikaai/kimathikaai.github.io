@@ -69,6 +69,7 @@
     /* flex: 1; */
     padding: 48px 48px;
     /* height:100%; */
+    /* background-color: green; */
 }
 
 .content::-webkit-scrollbar{
