@@ -57,9 +57,7 @@ const IndexPage = () => {
                         <p>
                             My research focuses on developing machine learning models that can generalize
                             to new data distributions without needing labels.
-                            I conduct my research as part of the Vision and Image Processing (<a href="https://vip.uwaterloo.ca/" target="_blank" rel="noopener">VIP</a>)
-                            and Critical Machine Learning (<a href="https://sirisharambhatla.com/criticalml/" target="_blank" rel="noopener">Critical ML</a>) 
-                            labs at the university. 
+                            I conduct my research as part of the <a href="https://vip.uwaterloo.ca/" target="_blank" rel="noopener">Vision and Image Processing</a> and <a href="https://sirisharambhatla.com/criticalml/" target="_blank" rel="noopener">Critical Machine Learning</a> labs. 
                         </p>
                     </div>
                 </div>
