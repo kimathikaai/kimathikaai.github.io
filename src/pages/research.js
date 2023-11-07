@@ -35,6 +35,12 @@ const PublicationData = [
 
 ]
 
+const PaperLink = ({url, string}) => {
+    return (
+    <a target="_blank" rel="noopener" href={url}>{string}</a>
+    )
+}
+
 const ResearchPage = () => {
     return (
     <Layout>
@@ -48,19 +54,8 @@ const ResearchPage = () => {
                 <div className={content}>
                     <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
                     <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023</p>
-                    <p><span className={ms.highlight}>Oral and Poster Presentation</span></p>
-                </div>
-            </div>
-            <h2>WORKSHOPS</h2>
-            <div className={researchCard}>
-                <div className={media}>
-                    <img src={egostan_fmt} />
-                </div>
-                <div className={content}>
-                <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2206.04785">Building Spatio-temporal Transformers for Egocentric 3D Pose Estimation</a></h3>
-                    <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                    <p>Joint International Workshop on Egocentric Perception, Interaction and Computing (EPIC) and Ego4D, IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2022</p>
+                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023. <PaperLink url="https://doi.org/10.1145/3580305.3599312" string="ACM"/></p>
+                    <p><span className={ms.highlight}>*Oral and poster presentation</span></p>
                 </div>
             </div>
             <h2>UNDER REVIEW</h2>
@@ -72,9 +67,24 @@ const ResearchPage = () => {
                     <div className={content}>
                     <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">Domain Generalization for Domain-Linked Classes</a></h3>
                         <p><span className={myName}>Kaai K,</span> S Hossain, S Rambhatla</p>
-                        <p>Arxiv Preprint Under Review, 2023
-                        </p>
+                        <PaperLink url="https://arxiv.org/abs/2306.00879"string="Arxiv"/>
                     </div>
+                </div>
+            </div>
+            <h2>WORKSHOPS</h2>
+            <div className={researchCard}>
+                <div className={media}>
+                    <img src={egostan_fmt} />
+                </div>
+                <div className={content}>
+                <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2206.04785">Building Spatio-temporal Transformers for Egocentric 3D Pose Estimation</a></h3>
+                    <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                    <p>
+                        Joint International Workshop on Egocentric Perception, 
+                        Interaction and Computing (EPIC) and Ego4D, IEEE/CVF 
+                        Computer Vision and Pattern Recognition Conference (CVPR), 
+                        2022. <PaperLink url="https://arxiv.org/abs/2206.04785"string="Arxiv"/>
+                    </p>
                 </div>
             </div>
         </>

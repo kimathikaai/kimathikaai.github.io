@@ -104,7 +104,8 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid var(--primary-color);
+    /* border-bottom: 2px solid var(--primary-color); */
+    border-bottom: 1px solid var(--primary-color);
     padding: 0px 0px 8px 0px;
     /* margin: 48px 0px 16px 0px; */
     margin: 24px 0px 1rem 0px;

@@ -33,13 +33,14 @@
 }
 
 .my-name {
-    color: var(--primary-color);
-    font-weight: bold;
-    /* text-decoration: underline; */
+    /* color: var(--primary-color); */
+    /* font-weight: bold; */
+    text-decoration: underline;
 }
 
 .highlight {
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
+    color: var(--primary-color);
     /* font-weight: bold; */
 }
 
