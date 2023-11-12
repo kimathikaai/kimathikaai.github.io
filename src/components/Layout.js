@@ -21,7 +21,7 @@ const isActive = ({isCurrent}) => {
 }
 
 
-export default function Layout({ children }) {
+export default function Layout({ children, center }) {
     const [isSidebarExtended, setSidebarExtended] = useState(false);
     // <Link to="/test" getProps={isActive}><div>test</div></Link>
 
@@ -45,7 +45,7 @@ export default function Layout({ children }) {
                     </nav>
                 </div>
 
-                <div className={`${ms.content} ${isSidebarExtended ? ms.closed : ''}`}>
+                <div className={`${ms.content} ${isSidebarExtended ? ms.closed : ''} ${center ? ms.center : ''}`}>
                     { children }
                 </div>
 

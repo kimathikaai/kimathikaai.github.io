@@ -1,12 +1,15 @@
 .image-group {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .image-group div {
-    /* height:40vh; */
-    /* flex-grow: 1; */
+    /* height:47vh; */
+    flex-grow: 1;
+    width: 45%;
+    min-width: 300px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -18,4 +21,10 @@
     /* min-width: 100%; */
     object-fit: cover;
     /* vertical-align: bottom; */
+}
+
+@media screen and (max-width: 640px) {
+    .image-group div {
+        width: 100%;
+    }
 }

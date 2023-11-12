@@ -32,7 +32,7 @@ const NetworkIconsV2 = () => {
 
 const IndexPage = () => {
     return (
-        <Layout>
+        <Layout center={true}>
             <>
                 <div className={ms.profileHeader}>
                     <h1>KIMATHI KAAI</h1>
