@@ -4,6 +4,7 @@ import {
     content,
     date
 } from '../styles/experience.module.css'
+import * as ms from '../styles/experience.module.css'
 
 const WorkData = [
     {
@@ -87,13 +88,15 @@ const ExperiencePage = () => {
             <h2>PROFESSIONAL</h2>
                 {
                     WorkData.map((item, index) => (
-                    <div className={content}>
-                        <div className={date}>
-                            <p>{item.start_year}/{item.start_month} - {item.end_year}/{item.end_month}</p>
+                    <div className={ms.card}>
+                        <div className={ms.date}>
+                            <p>{item.start_year}/{item.start_month}</p>
+                            <p>{item.end_year}/{item.end_month}</p>
                         </div>
-                        <h3>{item.job_title}</h3>
-                        <p>{item.company}, {item.country}</p>
-                        <p>{item.description}</p>
+                        <div className={content}>
+                            <h3>{item.job_title}</h3><span>{item.company}</span>
+                            <p>{item.description}</p>
+                        </div>
                     </div>
                     ))
                 }
