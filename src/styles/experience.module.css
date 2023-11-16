@@ -4,7 +4,8 @@
     margin: 20px 0;
     background-color: var(--surface-color);
     padding: 20px;
-    border-left: 2px solid var(--primary-color);
+    /* border-left: 2px solid var(--primary-color); */
+    /* border-left: 2px solid var(--primary-color); */
     /* display: flex; */
     /* flex-direction: column; */
     /* color: var(--color-base-70);  */
