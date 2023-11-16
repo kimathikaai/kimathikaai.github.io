@@ -65,9 +65,9 @@ const ResearchPage = () => {
                         <img src={pacs} />
                     </div>
                     <div className={content}>
-                    <h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2306.00879">Are all classes created equal? Domain Generalization for Domain-Linked Classes</a></h3>
+                    <h3><a target="_blank" rel="noopener" href="https://neurips.cc/virtual/2023/80513">Are all classes created equal? Domain Generalization for Domain-Linked Classes</a></h3>
                         <p><span className={myName}>Kaai K,</span> S Hossain, S Rambhatla</p>
-                        <p>NeurIPS 2023 Workshop on Distribution Shifts (DistShift), 2023. <PaperLink url="https://arxiv.org/abs/2306.00879"string="Arxiv"/></p>
+                        <p>NeurIPS 2023 Workshop on Distribution Shifts (DistShift), 2023. <PaperLink url="https://neurips.cc/virtual/2023/80513"string="NeurIPS"/></p>
                     </div>
                 </div>
             </div>
