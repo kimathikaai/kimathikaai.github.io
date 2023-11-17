@@ -14,7 +14,7 @@
 .date {
     /* border: 1px solid yellow; */
     color: var(--primary-color);
-    flex: 0 0 90px;
+    flex: 0 0 60px;
     text-align: right;
     padding: 20px 20px 20px 0;
 }
