@@ -80,6 +80,8 @@ const WorkData = [
 
 ]
 
+const months = ["","Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.","Dec."];
+
 const ExperiencePage = () => {
     return (
     <Layout>
@@ -90,8 +92,8 @@ const ExperiencePage = () => {
                     WorkData.map((item, index) => (
                     <div className={ms.card}>
                         <div className={ms.date}>
-                            <p>{item.start_year}/{item.start_month}</p>
-                            <p>{item.end_year}/{item.end_month}</p>
+                            <p>{months[item.end_month]} {item.end_year}</p>
+                            <p>{months[item.start_month]} {item.start_year}</p>
                         </div>
                         <div className={content}>
                             <h3>{item.job_title}</h3><span>{item.company}</span>
