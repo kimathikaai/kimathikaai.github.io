@@ -29,4 +29,8 @@
     /* .image-group div { */
     /*     width: 100%; */
     /* } */
+    .image-group {
+        gap: calc(var(--image-gap)*0.5);
+        margin-top: calc(var(--image-gap)*0.5 - var(--h1-margin-bottom));
+    }
 }
