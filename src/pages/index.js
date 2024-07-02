@@ -61,9 +61,9 @@ const IndexPage = () => {
                         </p>
                     </div>
                 </div>
-                <footer>
+                <div className={ms.footer}>
                     &copy; Copyright 2023 Kimathi Kaai
-                </footer>
+                </div>
             </>
         </Layout>
     )
