@@ -82,7 +82,9 @@ body {
     --sidebar-padding-right: 20px;
     --sidebar-width: 120px;
     --h1-margin-bottom: 8px;
+
     --content-padding: 48px;
+    --content-padding-small: calc(var(--content-padding)/3);
 
     --outer-container-padding: 20px;
 
@@ -98,6 +100,7 @@ body {
 
     /* Navigation */
     --icon-color: light-dark(var(--text-normal), var(--color-base-100));
+    --header-border-color: var(--scroll-bar-track-color);
 
     /* Photography */
     --image-gap: 20px;
