@@ -6,7 +6,17 @@ import {
 } from '../styles/experience.module.css'
 import * as ms from '../styles/experience.module.css'
 
-const WorkData = [
+const AcademicData = [
+    {
+        job_title: "Graduate Researcher ",
+        company: "UWaterloo, Apple, Nissan",
+        country: "Canada",
+        start_year: 'Current',
+        end_year: 'Current',
+        start_month: 0,
+        end_month: 0,
+        description: "My ongoing research, which spans both my MASc graduate studies and industry partnerships with Nissan and Apple, touches on two main factors impeding the adoption of emerging AI-based imaging solutions: (1) providing per-pixel annotations for imaging tasks is very expensive and labour-intensive; (2) satisfying small margins of error often requires designing highly specialized models that are brittle to small variations in input data (i.e., domain shifts)."
+    },
     {
         job_title: "Teaching Assistant",
         company: "University of Waterloo",
@@ -27,6 +37,9 @@ const WorkData = [
         end_month: 4,
         description: "Worked under UWaterloo's Vision and Image Processing (VIP) Lab focusing on egocentric 3D human pose estimation research. This culminated in co-authoring 1) a CVPR 2022 workshop conference paper and 2) a KDD 2023 conference publication. My efforts consisted of: reviewing and presenting background research on papers; collaborating with team members to generate novel ideas in weekly brainstorming sessions; implementing validation and evaluation modules for the PyTorch-based model prototypes."
     },
+]
+
+const WorkData = [
     {
         job_title: "Deep Learning Developer",
         company: "Applied Brain Research",
@@ -87,6 +100,21 @@ const ExperiencePage = () => {
     <Layout>
         <>
             <h1>EXPERIENCE</h1>
+            <h2>ACADEMIC</h2>
+                {
+                    AcademicData.map((item, index) => (
+                    <div className={ms.card}>
+                        <div className={ms.date}>
+                            <p>{months[item.start_month]}</p>
+                            <p>{item.start_year}</p>
+                        </div>
+                        <div className={content}>
+                            <h3>{item.job_title}</h3><span>{item.company}</span>
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                    ))
+                }
             <h2>PROFESSIONAL</h2>
                 {
                     WorkData.map((item, index) => (
