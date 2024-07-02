@@ -202,6 +202,7 @@ footer {
     .inner-container {
         /* display: flex; */
         /* border: 2px solid red; */
+        /* view port issue: https://medium.com/@alekswebnet/fix-mobile-100vh-bug-in-one-line-of-css-dynamic-viewport-units-in-action-102231e2ed56#:~:text=The%201vh%20takes%201%25%20of,actual%20height%20of%20the%20viewport. */
         height: calc(100dvh - 50px);
         margin-top: 50px;
     }    
