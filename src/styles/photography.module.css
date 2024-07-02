@@ -3,14 +3,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--image-gap);
+    margin-top: calc(var(--image-gap) - var(--h1-margin-bottom));
 }
 
 .image-group div {
     /* height:47vh; */
     flex-grow: 1;
     width: 45%;
-    min-width: 300px;
-    padding: 10px;
+    /* min-width: 300px; */
+    /* padding: 10px; */
     display: flex;
     justify-content: center;
 }
@@ -24,7 +26,7 @@
 }
 
 @media screen and (max-width: 640px) {
-    .image-group div {
-        width: 100%;
-    }
+    /* .image-group div { */
+    /*     width: 100%; */
+    /* } */
 }

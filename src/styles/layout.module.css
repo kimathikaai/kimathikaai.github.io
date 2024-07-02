@@ -209,6 +209,7 @@ footer {
         /* margin-left: 0px; */
         /* margin-top: calc(var(--content-margin-top) * 0.75); */
         /* display: none; */
+        padding: 24px;
     }
 
     .side-nav.closed {
