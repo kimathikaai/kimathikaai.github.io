@@ -65,8 +65,9 @@ body {
     --border-color: var(--color-base-30);
     --sidebar-padding-left: 20px;
     --sidebar-padding-right: 20px;
-    --sidebar-width: 200px;
+    --sidebar-width: 120px;
     --h1-margin-bottom: 8px;
+    --content-padding: 48px;
 
     --outer-container-padding: 20px;
 
