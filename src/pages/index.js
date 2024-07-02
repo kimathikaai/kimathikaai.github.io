@@ -32,8 +32,8 @@ const NetworkIconsV2 = () => {
 
 const IndexPage = () => {
     return (
-        <Layout center={true}>
-            <>
+        <Layout>
+            <div style={{height: '100%', alignContent:'center'}}>
                 <div className={ms.profileHeader}>
                     <h1>KIMATHI KAAI</h1>
                 </div>
@@ -64,7 +64,7 @@ const IndexPage = () => {
                 <div className={ms.footer}>
                     &copy; Copyright 2023 Kimathi Kaai
                 </div>
-            </>
+            </div>
         </Layout>
     )
 }
