@@ -32,7 +32,6 @@ const PhotographyPage = () => {
     return (
     <Layout>
         <>
-            <h1>PHOTOGRAPHY</h1>
             <div className={imageGroup}>
                 {Images.map((item, index) => (<div><img src={item} alt={item} key={index}/></div>))}
             </div>

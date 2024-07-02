@@ -14,6 +14,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 
 body {
     /* Colors */
+    color-scheme: light dark;
     --color-base-00: #1e1e1e;
     --color-base-05: #212121;
     --color-base-10: #242424;
@@ -27,9 +28,11 @@ body {
     --color-base-70: #bababa;
     --color-base-100: #dadada;
 
+    /* --color-white: #ffffff; */
+    --color-white: #f7f5ef;
     --color-red: #fb464c;
     --color-orange: #e9973f;
-    --color-yellow-muted: #e5b567;
+    --color-yellow-muted: light-dark(#946d2d, #e5b567);
     --color-green-muted: #a8c373;
     --color-cyan: #53dfdd;
     --color-blue: #6c99bb;
@@ -47,21 +50,33 @@ body {
     --accent-color: var(--color-green-muted);
 
     /* Dark Mode */
-    --background-color: var(--color-base-20);
+    --background-color: light-dark(var(--color-white), var(--color-base-20));
     --surface-color: var(--color-base-30);
     --primary-color: var(--color-blue-muted);
     --secondary-color: var(--color-yellow-muted);
     /* --secondary-color: var(--color-brown-muted); */
 
     /* Text */
-    --text-normal: var(--color-base-100);
-    --text-muted: var(--color-base-60);
+    --text-normal: light-dark(var(--color-base-20), var(--color-base-100));
+    --text-muted: light-dark(var(--color-base-60), var(--color-base-60));
     --normal-weight: 400em;
     --text-accent: #889eaa;
     --link-color: var(--secondary-color);
 
+    /* Scroll bar */
+    --scroll-bar-track-color: light-dark(var(--background-color), var(--color-base-40));
+    --scrollbar-thumb-color: light-dark(var(--text-normal), var(--color-base-60));
+
+    /* Experience */
+    --description-color: light-dark(var(--text-normal), var(--color-base-70));
+
+    /* Research */
+    --research-card-color: light-dark(var(--background-color), var(--surface-color));
+    --research-card-image-color: light-dark(var(--text-normal), var(--surface-color));
+    
+
     /* Layout */
-    --sidebar-border-color: var(--color-base-30);
+    --sidebar-border-color: light-dark(var(--text-muted), var(--color-base-30));
     --border-color: var(--color-base-30);
     --sidebar-padding-left: 20px;
     --sidebar-padding-right: 20px;
@@ -81,6 +96,9 @@ body {
 
     --inner-container-width: 65rem;
 
+    /* Navigation */
+    --icon-color: light-dark(var(--text-normal), var(--color-base-100));
+
     /* Photography */
     --image-gap: 20px;
 }
@@ -99,7 +117,7 @@ body {
 }
 
 h1 {
-    border-bottom: 2px solid var(--sidebar-border-color);
+    /* border-bottom: 2px solid var(--sidebar-border-color); */
     border-bottom: 2px solid var(--text-normal);
     padding: 0px 0px 16px 0px;
     /* margin: 48px 0px 16px 0px; */
@@ -110,7 +128,7 @@ h1 {
 
 h2 {
     /* border-bottom: 2px solid var(--primary-color); */
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     padding: 0px 0px 8px 0px;
     /* margin: 48px 0px 16px 0px; */
     margin: 24px 0px 1rem 0px;

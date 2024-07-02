@@ -8,7 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--surface-color);
+    background-color: var(--research-card-color);
     padding: 20px;
     /* border-left: 2px solid var(--color-base-40); */
 }
@@ -20,7 +20,7 @@
     padding: 10px 0 0 20px;
     /* margin: 0 20px; */
     /* border-left: 2px solid var(--primary-color); */
-    color: var(--color-base-70); 
+    color: var(--description-color); 
     flex: 1 0 175px;
 }
 .content h3 a {
@@ -66,6 +66,7 @@
     max-height:100%;
     object-fit: cover;
     /* vertical-align: middle; */
+    border: 2px solid var(--research-card-image-color);
 }
 
 /* Spacing in content*/
