@@ -227,6 +227,7 @@ footer {
 
     .side-nav {
         border: 0;
+        padding-left: 0;
     }
 
     .header {
