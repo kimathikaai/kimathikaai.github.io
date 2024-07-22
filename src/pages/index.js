@@ -49,14 +49,15 @@ const IndexPage = () => {
                             <h1>KIMATHI KAAI</h1>
                         </div>
                         <p>
-                            Hello! I am a <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a> MASc 
-                            student in the <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank" rel="noopener">SYDE Department</a> under
-                            the supervision of Prof. <a href="https://sirisharambhatla.com/" target="_blank" rel="noopener">Sirisha Rambhatla</a> and 
-                            Prof. <a href="https://www.eng.uwaterloo.ca/~a28wong/" target="_blank" rel="noopener">Alexander Wong</a>. 
+                            Hello! Welcome to my digital résumé.
                         </p>
                         <p>
-                            My research focuses on developing machine learning models that can generalize
-                            to new data distributions without needing labels.
+                            I am a <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a> MASc 
+                            student in the <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank" rel="noopener">SYDE Department</a> under
+                            the supervision of Prof. <a href="https://www.eng.uwaterloo.ca/~a28wong/" target="_blank" rel="noopener">Alexander Wong</a> and Asst. Prof. <a href="https://sirisharambhatla.com/" target="_blank" rel="noopener">Sirisha Rambhatla</a>.
+                        </p>
+                        <p>
+                            My research focuses on developing machine learning models, used for image processing, that can adapt to new environments.
                             I conduct my research as part of the <a href="https://vip.uwaterloo.ca/" target="_blank" rel="noopener">Vision and Image Processing</a> and <a href="https://sirisharambhatla.com/criticalml/" target="_blank" rel="noopener">Critical Machine Learning</a> labs. 
                         </p>
                     </div>

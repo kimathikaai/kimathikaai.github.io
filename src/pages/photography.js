@@ -28,6 +28,11 @@ DSC03531,
 DSC03103,
 ]
 
+// Creating tabs for photography
+// https://blog.logrocket.com/how-to-build-tab-component-react/
+// Including performance specs
+// https://www.freecodecamp.org/news/build-a-high-performance-tab-component/#the-heart-of-the-tab-component
+
 const PhotographyPage = () => {
     return (
     <Layout>
