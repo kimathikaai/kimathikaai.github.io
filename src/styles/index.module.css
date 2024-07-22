@@ -39,9 +39,9 @@
     /* height: 40vh; */
     /* flex-grow: 1; */
     /* min-width: 250px; */
-    height: calc(300px + 2rem + 50px);
+    /* height: calc(300px + 2rem + 50px); */
     /* width: 250px; */
-    flex: 0 0 250px;
+    flex: 1 0 250px;
 }
 
 /* Paper Image */
@@ -127,6 +127,12 @@
     .details {
         border: none;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .details {
+        padding-left: 0;
     }
 }
 
