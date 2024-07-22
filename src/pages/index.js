@@ -33,7 +33,7 @@ const NetworkIconsV2 = () => {
 const IndexPage = () => {
     return (
         <Layout>
-            <div style={{height: '100%', alignContent:'center'}}>
+            <div style={{height: '90%', alignContent:'center'}}>
                 <div className={ms.profileHeader}>
                     <h1>KIMATHI KAAI</h1>
                 </div>
