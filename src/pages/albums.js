@@ -88,6 +88,6 @@ const AlbumPage = () => {
 }
 
 // Page metadata for gatsby for SEO
-export const Head = () => <title>Kimathi | Album</title>
+export const Head = () => <title>Kimathi | Albums</title>
 
 export default AlbumPage
