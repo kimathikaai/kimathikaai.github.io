@@ -11,14 +11,19 @@ const albumData = [
     {
         title: "night-frame",
         description: "The night is a beautifule frame",
-        images: [0,1,2,3,4,5]
+        images: ['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg']
 
     },
     {
         title: "after-hours",
         description: "The night gives meaning to the light behind windows",
-        images: [0,1,2,3]
+        images: ['0.jpg','1.jpg','2.jpg','3.jpg']
     },
+    {
+        title: 'alone-together',
+        description: 'tbd',
+        images: ['0.png','1.png','2.png','3.png']
+    }
 ];
 
 const TabButtons = ({albumData, activeTab, setActiveTab}) => {
@@ -47,7 +52,7 @@ const TabContent = ({albumData, activeTab}) => {
                 {albumData[activeTab].images.map((img, index) => (
                     <div>
                         <img 
-                            src={'/photos/'+ albumData[activeTab].title + '/'+img+'.jpg'} 
+                            src={'/photos/'+ albumData[activeTab].title + '/'+img} 
                             alt='' 
                             key={index}
                         />
