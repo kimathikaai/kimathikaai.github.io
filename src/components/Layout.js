@@ -20,6 +20,7 @@ const isActive = ({isCurrent}) => {
     return isCurrent ? {className: active} : null
 }
 
+// <Link to="/photography" getProps={isActive}><div>photography</div></Link>
 
 export default function Layout({ children, center }) {
     const [isSidebarExtended, setSidebarExtended] = useState(false);
@@ -41,7 +42,7 @@ export default function Layout({ children, center }) {
                         <Link to="/" getProps={isActive}><div>about</div></Link>
                         <Link to="/research" getProps={isActive}><div>research</div></Link>
                         <Link to="/experience" getProps={isActive}><div>experience</div></Link>
-                        <Link to="/photography" getProps={isActive}><div>photography</div></Link>
+                        <Link to="/albums" getProps={isActive}><div>albums</div></Link>
                     </nav>
                 </div>
 
