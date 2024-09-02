@@ -10,6 +10,7 @@ import * as ms from '../styles/research.module.css'
 import pacs from '../../static/pacs_data.png'
 import egostan from '../../static/egostan_skeleton.png'
 import egostan_fmt from '../../static/egostan_fmt.png'
+import thesis from '../../static/thesis.jpg'
 
 const PublicationData = [
     {    
@@ -56,6 +57,18 @@ const ResearchPage = () => {
                     <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
                     <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023. <PaperLink url="https://doi.org/10.1145/3580305.3599312" string="ACM"/></p>
                     <p><span className={ms.highlight}>*Oral and poster presentation</span></p>
+                </div>
+            </div>
+            <div>
+                <div className={researchCard}>
+                    <div className={media}>
+                        <img src={thesis} />
+                    </div>
+                    <div className={content}>
+                    <h3><a target="_blank" rel="noopener" href="https://hdl.handle.net/10012/20932">Addressing Data Scarcity in Domain Generalization for Computer Vision Applications in Image Classification</a></h3>
+                        <p><span className={myName}>Kaai K</span></p>
+                        <p>University of Waterloo, Masters of Applied Science (MASc) Thesis, 2024. <PaperLink url="https://hdl.handle.net/10012/20932"string="UWSpace"/></p>
+                    </div>
                 </div>
             </div>
             <h2>WORKSHOPS</h2>
