@@ -52,7 +52,7 @@ const IndexPage = () => {
                             Hello! Welcome to my digital résumé.
                         </p>
                         <p>
-                            I am a <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a> MASc 
+                            I am a <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a> PhD 
                             student in the <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank" rel="noopener">SYDE Department</a> under
                             the supervision of Prof. <a href="https://www.eng.uwaterloo.ca/~a28wong/" target="_blank" rel="noopener">Alexander Wong</a> and Asst. Prof. <a href="https://sirisharambhatla.com/" target="_blank" rel="noopener">Sirisha Rambhatla</a>.
                         </p>
