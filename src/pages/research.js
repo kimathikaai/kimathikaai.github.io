@@ -54,7 +54,7 @@ const ResearchPage = () => {
                 </div>
                 <div className={content}>
                     <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
-                    <p>J Park, <span className={myName}>Kaai K,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                    <p>J Park, <span className={myName}>K Kaai,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
                     <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023. <PaperLink url="https://doi.org/10.1145/3580305.3599312" string="ACM"/></p>
                     <p><span className={ms.highlight}>*Oral and poster presentation</span></p>
                 </div>
@@ -66,7 +66,7 @@ const ResearchPage = () => {
                     </div>
                     <div className={content}>
                     <h3><a target="_blank" rel="noopener" href="https://hdl.handle.net/10012/20932">Addressing Data Scarcity in Domain Generalization for Computer Vision Applications in Image Classification</a></h3>
-                        <p><span className={myName}>Kaai K</span></p>
+                        <p><span className={myName}>K Kaai</span></p>
                         <p>University of Waterloo, Masters of Applied Science (MASc) Thesis, 2024. <PaperLink url="https://hdl.handle.net/10012/20932"string="UWSpace"/></p>
                     </div>
                 </div>
