@@ -6,6 +6,7 @@ import '../styles/index.module.css'
 
 import * as IoIcons from 'react-icons/io5'
 import * as SiIcons from 'react-icons/si'
+import { FaRegFilePdf } from "react-icons/fa6";
 
 const NetworkIcons = () => {
     return (
@@ -25,6 +26,7 @@ const NetworkIconsV2 = () => {
            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/kimathikaai/"><IoIcons.IoLogoLinkedin /></a>
            <a target="_blank" rel="noopener" href="https://scholar.google.ca/citations?user=XpCEjJ4AAAAJ&hl=en"><SiIcons.SiGooglescholar /></a>
            <a target="_blank" rel="noopener" href="mailto: kkaai@uwaterloo.ca"><IoIcons.IoMailOpen /></a>
+           <a target="_blank" rel="noopener" href="Resume.pdf"><FaRegFilePdf/></a>
         </>
     )
 
