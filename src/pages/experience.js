@@ -48,7 +48,8 @@ const WorkData = [
         end_year: 2021,
         start_month: 5,
         end_month: 8,
-        description: "Prototyped recurrent neural network architectures for wearable and computer vision applications. Primary focus was on human activity recognition from human electrocardiogram signals."
+        // description: "Prototyped recurrent neural network architectures for wearable and computer vision applications. Primary focus was on human activity recognition from human electrocardiogram signals."
+        description: "Developed and optimized recurrent neural networks for wearable and computer vision applications, improving activity recognition accuracy by ~2% using ECG signals."
     },
     {
         job_title: "Software Engineer",
@@ -58,7 +59,8 @@ const WorkData = [
         end_year: 2021,
         start_month: 6,
         end_month: 4,
-        description: "Identified and implemented point-cloud surface feature descriptors for LiDAR-based human/vehicle recognition with C++11, PCL and OpenCV. Prototyped SVMs and Neural Networks to improve the precision and recall of the Helius Smart Lidar. Researched and prototyped LiDAR-based ego-motion vehicle estimation models on the Automotive Perception Team."
+        // description: "Identified and implemented point-cloud surface feature descriptors for LiDAR-based human/vehicle recognition with C++11, PCL and OpenCV. Prototyped SVMs and Neural Networks to improve the precision and recall of the Helius Smart Lidar. Researched and prototyped LiDAR-based ego-motion vehicle estimation models on the Automotive Perception Team."
+        description: "Optimized 3D point-cloud surface descriptors for LiDAR-based object recognition, achieving a ~19% boost in computational efficiency and a ~5% increase in vehicle detection accuracy. Developed a multimodal camera-LiDAR network integrating CNNs (UNet, DeepLabV3) for 3D point-cloud object recognition, reducing manual data annotation costs by >90%."
     },
     {
         job_title: "Hardware Designer",
@@ -68,7 +70,8 @@ const WorkData = [
         end_year: 2019,
         start_month: 9,
         end_month: 12,
-        description: "Developed multi-channel J2K encoding/decoding products for Amazon and ESPNs streaming services using C/C++. Developed data corruption detection modules for video and audio ST2110-20/30 IP packets in python. Collaborated with product specialists to perform endto-end integration tests for the 570J2K-HW-X19 encoder."
+        // description: "Developed multi-channel J2K encoding/decoding products for Amazon and ESPNs streaming services using C/C++. Developed data corruption detection modules for video and audio ST2110-20/30 IP packets in python. Collaborated with product specialists to perform endto-end integration tests for the 570J2K-HW-X19 encoder."
+        description: "Developed and debugged FPGA-based audiovisual broadcasting systems for Amazon and ESPN streaming services, leveraging C/C++ for high-performance functionality. Wrote data corruption detection modules for video IP packets with Python, reducing transmission error rates by 15%. Collaborated with product specialists to perform endto-end integration tests for the 570J2K-HW-X19 encoder."
     },
     {
         job_title: "Software Developer",
@@ -78,7 +81,8 @@ const WorkData = [
         end_year: 2019,
         start_month: 1,
         end_month: 4,
-        description: "Developed navigation wizards to integrate Vena’s FP&A platform with external data sources using React and Redux. Debugged the Java 8 back-end to diagnose issues with MongoDB and SQL Server transactions. Composed technical documentation for the research and testing stages of Vena's feature development cycle."
+        // description: "Developed navigation wizards to integrate Vena’s FP&A platform with external data sources using React and Redux. Debugged the Java 8 back-end to diagnose issues with MongoDB and SQL Server transactions. Composed technical documentation for the research and testing stages of Vena's feature development cycle."
+        description: "Built navigation wizards for financial platform integration using React and Redux, improving user onboarding efficiency. Diagnosed backend issues in Java 8 applications, resolving MongoDB and SQL Server transaction bottlenecks. Composed technical documentation for the research and testing stages of Vena's feature development cycle."
     },
     {
         job_title: "DevOps Software Engineer",
@@ -115,7 +119,7 @@ const ExperiencePage = () => {
                     </div>
                     ))
                 }
-            <h2>PROFESSIONAL</h2>
+            <h2>INTERNSHIPS</h2>
                 {
                     WorkData.map((item, index) => (
                     <div className={ms.card}>
