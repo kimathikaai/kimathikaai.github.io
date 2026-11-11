@@ -11,6 +11,7 @@ import pacs from '../../static/pacs_data.png'
 import egostan from '../../static/egostan_skeleton.png'
 import egostan_fmt from '../../static/egostan_fmt.png'
 import thesis from '../../static/thesis.jpg'
+import fond_camelyon17 from '../../static/fond_camelyon17.jpg'
 
 const PublicationData = [
     {    
@@ -50,13 +51,12 @@ const ResearchPage = () => {
             <h2>PUBLICATIONS</h2>
             <div className={researchCard}>
                 <div className={media}>
-                    <img src={egostan} />
+                    <img src={fond_camelyon17} />
                 </div>
                 <div className={content}>
-                    <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
-                    <p>J Park, <span className={myName}>K Kaai,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
-                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023. <PaperLink url="https://doi.org/10.1145/3580305.3599312" string="ACM"/></p>
-                    <p><span className={ms.highlight}>*Oral and poster presentation</span></p>
+                    <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1109/TPAMI.2025.3593407">Bringing Equity to Classification: Domain Generalization for Domain-Linked Classes</a></h3>
+                    <p><span className={myName}>K Kaai,</span> S Hossain, S Rambhatla</p>
+                    <p>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025. <PaperLink url="https://doi.org/10.1109/TPAMI.2025.3593407" string="IEEE"/></p>
                 </div>
             </div>
             <div>
@@ -69,6 +69,17 @@ const ResearchPage = () => {
                         <p><span className={myName}>K Kaai</span></p>
                         <p>University of Waterloo, Masters of Applied Science (MASc) Thesis, 2024. <PaperLink url="https://hdl.handle.net/10012/20932"string="UWSpace"/></p>
                     </div>
+                </div>
+            </div>
+            <div className={researchCard}>
+                <div className={media}>
+                    <img src={egostan} />
+                </div>
+                <div className={content}>
+                    <h3><a target="_blank" rel="noopener" href="https://doi.org/10.1145/3580305.3599312">Domain-Guided Spatio-Temporal Self-Attention for Egocentric 3D Pose Estimation</a></h3>
+                    <p>J Park, <span className={myName}>K Kaai,</span> S Hossain, N Sumi, S Rambhatla, P Fieguth</p>
+                    <p>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023. <PaperLink url="https://doi.org/10.1145/3580305.3599312" string="ACM"/></p>
+                    <p><span className={ms.highlight}>*Oral and poster presentation</span></p>
                 </div>
             </div>
             <h2>WORKSHOPS</h2>
